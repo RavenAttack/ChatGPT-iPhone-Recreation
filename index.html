@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iOS 26 Unboxed Experience</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="experience" id="experience">
+      <header class="top-controls glass" aria-label="Experience controls">
+        <button id="modeToggle" class="control-btn" type="button">Switch to iPad mode</button>
+        <button id="restartSetup" class="control-btn" type="button">Restart setup</button>
+      </header>
+
+      <section class="device-shell" id="deviceShell" aria-label="iOS 26 device shell">
+        <div class="screen" id="screen">
+          <header class="status-bar">
+            <span id="time" class="status-time">9:41</span>
+            <div class="island" role="img" aria-label="Dynamic island"></div>
+            <div class="status-icons" aria-hidden="true">
+              <span class="signal"></span>
+              <span class="wifi"></span>
+              <span class="battery"><span class="level"></span></span>
+            </div>
+          </header>
+
+          <section class="setup-flow" id="setupFlow" aria-label="New iPhone setup">
+            <p class="eyebrow">Hello there</p>
+            <h1>Welcome to iOS 26</h1>
+            <p class="setup-copy">Swipe through the new setup and personalize your brand new device.</p>
+
+            <div class="setup-cards" id="setupCards">
+              <article class="setup-card active" data-step="0">
+                <h2>Quick Start</h2>
+                <p>Bring your old iPhone nearby to transfer apps, photos, and settings in minutes.</p>
+              </article>
+              <article class="setup-card" data-step="1">
+                <h2>Privacy</h2>
+                <p>iOS 26 protects your data with private processing and app-by-app permission controls.</p>
+              </article>
+              <article class="setup-card" data-step="2">
+                <h2>Appearance</h2>
+                <p>Choose your look. You can still switch between iPhone and iPad style from the controls.</p>
+              </article>
+            </div>
+
+            <div class="setup-actions">
+              <button id="nextSetup" class="primary-btn" type="button">Continue</button>
+              <button id="finishSetup" class="secondary-btn" type="button" disabled>Finish setup</button>
+            </div>
+          </section>
+
+          <section class="home" id="home" aria-label="Home screen" hidden>
+            <section class="hero-widget glass">
+              <p class="widget-title">Unboxed and ready</p>
+              <h2 id="date" class="widget-date">Monday, January 1</h2>
+              <p class="widget-temp">Cupertino · 72° · Mostly Clear</p>
+            </section>
+
+            <section class="app-grid" aria-label="Application icons">
+              <button class="app glass purple" data-app="facetime" type="button"><span>FaceTime</span></button>
+              <button class="app glass blue" data-app="mail" type="button"><span>Mail</span></button>
+              <button class="app glass orange" data-app="music" type="button"><span>Music</span></button>
+              <button class="app glass green" data-app="maps" type="button"><span>Maps</span></button>
+              <button class="app glass cyan" data-app="safari" type="button"><span>Safari</span></button>
+              <button class="app glass pink" data-app="photos" type="button"><span>Photos</span></button>
+              <button class="app glass red" data-app="health" type="button"><span>Health</span></button>
+              <button class="app glass yellow" data-app="notes" type="button"><span>Notes</span></button>
+            </section>
+
+            <footer class="dock glass" aria-label="Dock">
+              <button class="dock-app" data-action="phone" type="button"><span>Phone</span></button>
+              <button class="dock-app" data-action="messages" type="button"><span>Messages</span></button>
+              <button class="dock-app" data-action="camera" type="button"><span>Camera</span></button>
+              <button class="dock-app" data-action="settings" type="button"><span>Settings</span></button>
+            </footer>
+          </section>
+
+          <div id="toast" class="toast" role="status" aria-live="polite"></div>
+          <div class="home-indicator" aria-hidden="true"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
